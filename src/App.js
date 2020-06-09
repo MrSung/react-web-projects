@@ -1,5 +1,32 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Home, Counter } from './components';
+
+const routes = [
+  {
+    link: '/',
+    name: 'Home',
+  },
+  {
+    link: '/counter',
+    name: 'Counter',
+  },
+];
+
+const components = {
+  home: Home,
+  counter: Counter,
+};
+
+function List({ type }) {
+  const TypeComponent = components[type.toLowerCase() || 'home'];
+  return <TypeComponent />;
+}
+
+List.propTypes = {
+  type: PropTypes.string.isRequired,
+};
 
 export default function App() {
   return (
@@ -7,44 +34,22 @@ export default function App() {
       <div>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
+            {routes.map((route) => (
+              <li key={route.name}>
+                <Link to={route.link}>{route.name}</Link>
+              </li>
+            ))}
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/users">
-            <Users />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          {routes.reverse().map((route) => (
+            <Route path={route.link}>
+              <List type={route.name} />
+            </Route>
+          ))}
         </Switch>
       </div>
     </Router>
   );
-}
-
-function Home() {
-  return <h2>Home</h2>;
-}
-
-function About() {
-  return <h2>About</h2>;
-}
-
-function Users() {
-  return <h2>Users</h2>;
 }
