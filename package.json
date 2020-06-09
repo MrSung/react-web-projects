@@ -1,0 +1,41 @@
+{
+  "name": "react-web-projects",
+  "version": "1.0.0",
+  "author": "Sungjoon Park",
+  "license": "WTFPL",
+  "engines": {
+    "node": "12.18.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build-prod": "parcel build src/index.html",
+    "clean": "rm -r .cache dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "autoprefixer": "^9.8.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-wesbos": "0.0.19",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^2.0.0",
+    "prettier": "^2.0.5",
+    "sass": "^1.26.8"
+  }
+}
