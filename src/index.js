@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "./styles.scss";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import '@exampledev/new.css';
 
-var mountNode = document.getElementById("app");
+const mountNode = document.getElementById('app');
 ReactDOM.render(<App name="Sungjoon" />, mountNode);
