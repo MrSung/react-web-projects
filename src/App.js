@@ -44,7 +44,7 @@ export default function App() {
 
         <Switch>
           {routes.reverse().map((route) => (
-            <Route path={route.link}>
+            <Route path={route.link} key={route.name}>
               <List type={route.name} />
             </Route>
           ))}
