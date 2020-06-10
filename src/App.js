@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Home, Counter, Form } from './components';
+import { Home, Counter, Form, ClickGame } from './components';
 
 const routes = [
   {
@@ -16,12 +16,17 @@ const routes = [
     link: '/form',
     name: 'Form',
   },
+  {
+    link: '/click-game',
+    name: 'ClickGame',
+  },
 ];
 
 const components = {
   home: Home,
   counter: Counter,
   form: Form,
+  clickgame: ClickGame,
 };
 
 function List({ type }) {
