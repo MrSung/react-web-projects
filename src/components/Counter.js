@@ -15,7 +15,7 @@ export default function Counter() {
   return (
     <>
       <h1>Counter (useRef sample)</h1>
-      <h2>{count}</h2>
+      <p>{count}</p>
       <button type="button" onClick={clear}>
         Stop!
       </button>
