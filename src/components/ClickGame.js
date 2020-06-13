@@ -15,7 +15,7 @@ export default function ClickGame() {
     timerId.current = setInterval(() => {
       setTimer((t) => t - 1);
     }, 1000);
-    return () => clearTimer;
+    return () => clearTimer();
   }, []);
 
   useEffect(() => {

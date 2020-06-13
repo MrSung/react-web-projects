@@ -9,7 +9,7 @@ export default function Counter() {
     id.current = setInterval(() => {
       setCount((c) => c + 1);
     }, 1000);
-    return () => clear;
+    return () => clear();
   }, []);
 
   return (
