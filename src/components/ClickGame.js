@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import heading from '../config/heading';
 
 export default function ClickGame() {
   const [counter, setCounter] = useState(0);
@@ -26,6 +27,7 @@ export default function ClickGame() {
 
   return (
     <>
+      <h1>{heading.clickGame}</h1>
       <button type="button" onClick={handleSetCount}>
         Click!
       </button>

@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import heading from '../config/heading';
 
 export default function Form() {
   const nameRef = useRef();
@@ -15,7 +16,7 @@ export default function Form() {
 
   return (
     <>
-      <h1>Form (useRef sample)</h1>
+      <h1>{heading.form}</h1>
       <form autoComplete="off">
         <label htmlFor="name">
           <input type="text" placeholder="name" ref={nameRef} id="name" />

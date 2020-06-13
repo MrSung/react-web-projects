@@ -9,7 +9,7 @@
   "scripts": {
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html",
-    "clean": "rm -r .cache dist",
+    "clean": "rimraf .cache dist",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -39,6 +39,7 @@
     "parcel-bundler": "^1.12.4",
     "postcss-modules": "^2.0.0",
     "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
     "sass": "^1.26.8"
   }
 }

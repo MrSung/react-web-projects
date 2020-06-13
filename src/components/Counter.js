@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import heading from '../config/heading';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -14,7 +15,7 @@ export default function Counter() {
 
   return (
     <>
-      <h1>Counter (useRef sample)</h1>
+      <h1>{heading.counter}</h1>
       <p>{count}</p>
       <button type="button" onClick={clear}>
         Stop!

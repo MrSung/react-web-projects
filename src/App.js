@@ -2,23 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Home, Counter, Form, ClickGame } from './components';
+import heading from './config/heading';
 
 const routes = [
   {
     link: '/',
     name: 'Home',
+    heading: heading.home,
   },
   {
     link: '/counter',
     name: 'Counter',
+    heading: heading.counter,
   },
   {
     link: '/form',
     name: 'Form',
+    heading: heading.form,
   },
   {
     link: '/click-game',
     name: 'ClickGame',
+    heading: heading.clickGame,
   },
 ];
 
@@ -46,7 +51,7 @@ export default function App() {
           <ul>
             {routes.map((route) => (
               <li key={route.name}>
-                <Link to={route.link}>{route.name}</Link>
+                <Link to={route.link}>{route.heading}</Link>
               </li>
             ))}
           </ul>
