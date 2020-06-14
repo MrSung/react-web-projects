@@ -7,6 +7,7 @@ import {
   Form,
   ClickGame,
   ExpletiveProviderConsumer,
+  LocaleContextSample,
 } from './components';
 import heading from './config/heading';
 
@@ -36,6 +37,11 @@ const routes = [
     name: 'ExpletiveProviderConsumer',
     heading: heading.expletiveProviderConsumer,
   },
+  {
+    link: '/locale-context-sample',
+    name: 'LocaleContextSample',
+    heading: heading.localeContextSample,
+  },
 ];
 
 const components = {
@@ -44,6 +50,7 @@ const components = {
   form: Form,
   clickgame: ClickGame,
   expletiveproviderconsumer: ExpletiveProviderConsumer,
+  localecontextsample: LocaleContextSample,
 };
 
 function List({ type }) {
