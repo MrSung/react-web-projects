@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import { Home, Counter, Form, ClickGame } from './components';
+import {
+  Home,
+  Counter,
+  Form,
+  ClickGame,
+  ExpletiveProviderConsumer,
+} from './components';
 import heading from './config/heading';
 
 const routes = [
@@ -25,6 +31,11 @@ const routes = [
     name: 'ClickGame',
     heading: heading.clickGame,
   },
+  {
+    link: '/expletive-provider-consumer',
+    name: 'ExpletiveProviderConsumer',
+    heading: heading.expletiveProviderConsumer,
+  },
 ];
 
 const components = {
@@ -32,6 +43,7 @@ const components = {
   counter: Counter,
   form: Form,
   clickgame: ClickGame,
+  expletiveproviderconsumer: ExpletiveProviderConsumer,
 };
 
 function List({ type }) {
