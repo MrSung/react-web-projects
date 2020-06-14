@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {
   Home,
-  Counter,
+  CounterRef,
   Form,
   ClickGame,
   ExpletiveProviderConsumer,
@@ -18,9 +18,9 @@ const routes = [
     heading: heading.home,
   },
   {
-    link: '/counter',
-    name: 'Counter',
-    heading: heading.counter,
+    link: '/counter-ref',
+    name: 'CounterRef',
+    heading: heading.counterRef,
   },
   {
     link: '/form',
@@ -46,15 +46,16 @@ const routes = [
 
 const components = {
   home: Home,
-  counter: Counter,
+  counterRef: CounterRef,
   form: Form,
-  clickgame: ClickGame,
-  expletiveproviderconsumer: ExpletiveProviderConsumer,
-  localecontextsample: LocaleContextSample,
+  clickGame: ClickGame,
+  expletiveProviderConsumer: ExpletiveProviderConsumer,
+  localeContextSample: LocaleContextSample,
 };
 
 function List({ type }) {
-  const TypeComponent = components[type.toLowerCase() || 'home'];
+  const TypeComponent =
+    components[type[0].toLowerCase() + type.slice(1) || 'home'];
   return <TypeComponent />;
 }
 
