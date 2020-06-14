@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import heading from '../config/heading';
 
-export default function Counter() {
+export default function CounterRef() {
   const [count, setCount] = useState(0);
   const id = useRef(null);
   const clear = () => clearInterval(id.current);
@@ -15,7 +15,7 @@ export default function Counter() {
 
   return (
     <>
-      <h1>{heading.counter}</h1>
+      <h1>{heading.counterRef}</h1>
       <p>{count}</p>
       <button type="button" onClick={clear}>
         Stop!
