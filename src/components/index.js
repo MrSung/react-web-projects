@@ -5,6 +5,7 @@ import Form from './Form';
 import ClickGame from './ClickGame';
 import ExpletiveProviderConsumer from './ExpletiveProviderConsumer';
 import LocaleContextSample from './LocaleContextSample';
+import MathCalc from './MathCalc';
 
 export {
   Home,
@@ -14,4 +15,5 @@ export {
   ClickGame,
   ExpletiveProviderConsumer,
   LocaleContextSample,
+  MathCalc,
 };

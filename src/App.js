@@ -9,6 +9,7 @@ import {
   ClickGame,
   ExpletiveProviderConsumer,
   LocaleContextSample,
+  MathCalc,
 } from './components';
 import heading from './config/heading';
 
@@ -48,6 +49,11 @@ const routes = [
     name: 'LocaleContextSample',
     heading: heading.localeContextSample,
   },
+  {
+    link: '/math-calc',
+    name: 'MathCalc',
+    heading: heading.mathCalc,
+  },
 ];
 
 const components = {
@@ -58,6 +64,7 @@ const components = {
   clickGame: ClickGame,
   expletiveProviderConsumer: ExpletiveProviderConsumer,
   localeContextSample: LocaleContextSample,
+  mathCalc: MathCalc,
 };
 
 function List({ type }) {
