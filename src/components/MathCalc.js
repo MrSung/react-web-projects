@@ -18,6 +18,14 @@ export default function MathCalc() {
 
   return (
     <>
+      <hr />
+      <button type="button" onClick={handleAdd10}>
+        Add 10
+      </button>
+      <button type="button" onClick={handleReset}>
+        Reset
+      </button>
+      <hr />
       <MathCalcFib
         count={fibCount}
         increment={() => setFibCount((c) => c + 1)}
@@ -26,12 +34,6 @@ export default function MathCalc() {
         count={primeCount}
         increment={() => setPrimeCount((c) => c + 1)}
       />
-      <button type="button" onClick={handleAdd10}>
-        Add 10
-      </button>
-      <button type="button" onClick={handleReset}>
-        Reset
-      </button>
     </>
   );
 }
