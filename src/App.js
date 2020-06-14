@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import {
   Home,
+  CounterReducer,
   CounterRef,
   Form,
   ClickGame,
@@ -16,6 +17,11 @@ const routes = [
     link: '/',
     name: 'Home',
     heading: heading.home,
+  },
+  {
+    link: '/counter-reducer',
+    name: 'CounterReducer',
+    heading: heading.counterReducer,
   },
   {
     link: '/counter-ref',
@@ -46,6 +52,7 @@ const routes = [
 
 const components = {
   home: Home,
+  counterReducer: CounterReducer,
   counterRef: CounterRef,
   form: Form,
   clickGame: ClickGame,

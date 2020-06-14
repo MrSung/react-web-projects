@@ -1,4 +1,5 @@
 import Home from './Home';
+import CounterReducer from './CounterReducer';
 import CounterRef from './CounterRef';
 import Form from './Form';
 import ClickGame from './ClickGame';
@@ -7,6 +8,7 @@ import LocaleContextSample from './LocaleContextSample';
 
 export {
   Home,
+  CounterReducer,
   CounterRef,
   Form,
   ClickGame,
