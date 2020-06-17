@@ -6,6 +6,7 @@ import ClickGame from './ClickGame';
 import ExpletiveProviderConsumer from './ExpletiveProviderConsumer';
 import LocaleContextSample from './LocaleContextSample';
 import MathCalc from './MathCalc';
+import TrvFormRoughValidator from './TrvFormRoughValidator';
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   ExpletiveProviderConsumer,
   LocaleContextSample,
   MathCalc,
+  TrvFormRoughValidator,
 };

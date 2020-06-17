@@ -10,6 +10,7 @@ import {
   ExpletiveProviderConsumer,
   LocaleContextSample,
   MathCalc,
+  TrvFormRoughValidator,
 } from './components';
 import heading from './config/heading';
 
@@ -54,6 +55,11 @@ const routes = [
     name: 'MathCalc',
     heading: heading.mathCalc,
   },
+  {
+    link: '/trv-form-rough-validator',
+    name: 'TrvFormRoughValidator',
+    heading: heading.trvFormRoughValidator,
+  },
 ];
 
 const components = {
@@ -65,6 +71,7 @@ const components = {
   expletiveProviderConsumer: ExpletiveProviderConsumer,
   localeContextSample: LocaleContextSample,
   mathCalc: MathCalc,
+  trvFormRoughValidator: TrvFormRoughValidator,
 };
 
 function List({ type }) {
