@@ -9,6 +9,7 @@ const heading = {
     'LocaleContextSample (createContext, useState, useMemo, useContext)',
   mathCalc: 'MathCalc (useMemo)',
   trvFormRoughValidator: 'TrvFormRoughValidator',
+  trvMovieSeatBooking: 'TrvMovieSeatBooking',
 };
 
 export default heading;

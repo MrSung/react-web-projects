@@ -11,6 +11,7 @@ import {
   LocaleContextSample,
   MathCalc,
   TrvFormRoughValidator,
+  TrvMovieSeatBooking,
 } from './components';
 import heading from './config/heading';
 
@@ -60,6 +61,11 @@ const routes = [
     name: 'TrvFormRoughValidator',
     heading: heading.trvFormRoughValidator,
   },
+  {
+    link: '/trv-movie-seat-booking',
+    name: 'TrvMovieSeatBooking',
+    heading: heading.trvMovieSeatBooking,
+  },
 ];
 
 const components = {
@@ -72,6 +78,7 @@ const components = {
   localeContextSample: LocaleContextSample,
   mathCalc: MathCalc,
   trvFormRoughValidator: TrvFormRoughValidator,
+  trvMovieSeatBooking: TrvMovieSeatBooking,
 };
 
 function List({ type }) {

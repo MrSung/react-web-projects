@@ -7,6 +7,7 @@ import ExpletiveProviderConsumer from './ExpletiveProviderConsumer';
 import LocaleContextSample from './LocaleContextSample';
 import MathCalc from './MathCalc';
 import TrvFormRoughValidator from './TrvFormRoughValidator';
+import TrvMovieSeatBooking from './TrvMovieSeatBooking';
 
 export {
   Home,
@@ -18,4 +19,5 @@ export {
   LocaleContextSample,
   MathCalc,
   TrvFormRoughValidator,
+  TrvMovieSeatBooking,
 };
