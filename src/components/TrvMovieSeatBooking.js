@@ -1,5 +1,5 @@
 /* eslint-disable no-plusplus, no-param-reassign */
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 
 let movieId = 0;
 let seatId = 0;
@@ -40,6 +40,7 @@ export default function TrvMovieSeatBooking() {
     }, 0);
     return { number: occupiedNum, price: occupiedNum * selectedMoviePrice };
   }, [seats, selectedMoviePrice]);
+  const selectedMovieRef = useRef(null);
 
   const handleSeatClick = (id) => {
     setSeats((arr) =>
@@ -52,6 +53,11 @@ export default function TrvMovieSeatBooking() {
     );
   };
 
+  useEffect(() => {
+    const { value } = selectedMovieRef.current;
+    setSelectedMoviePrice(Number(value));
+  }, [selectedMovieRef]);
+
   return (
     <>
       <div>
@@ -60,8 +66,9 @@ export default function TrvMovieSeatBooking() {
           <select
             name="movie"
             id="movie"
-            onChange={(event) =>
-              setSelectedMoviePrice(Number(event.target.value))
+            ref={selectedMovieRef}
+            onChange={() =>
+              setSelectedMoviePrice(Number(selectedMovieRef.current.value))
             }
           >
             {movies.map(({ id, title: movieTitle, price: moviePrice }) => (
