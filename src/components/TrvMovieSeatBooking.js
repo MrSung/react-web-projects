@@ -1,5 +1,6 @@
 /* eslint-disable no-plusplus, no-param-reassign */
 import React, { useState, useMemo, useRef, useEffect } from 'react';
+import heading from '../config/heading';
 
 let movieId = 0;
 let seatId = 0;
@@ -60,6 +61,7 @@ export default function TrvMovieSeatBooking() {
 
   return (
     <>
+      <h1>{heading.trvMovieSeatBooking}</h1>
       <div>
         <label htmlFor="movie">
           Pick your favorite movie:{' '}

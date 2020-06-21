@@ -1,4 +1,5 @@
 import React, { useRef, useState, useReducer } from 'react';
+import heading from '../config/heading';
 
 export default function TrvFormRoughValidator() {
   const usernameRef = useRef(null);
@@ -93,50 +94,53 @@ export default function TrvFormRoughValidator() {
   };
 
   return (
-    <form autoComplete="off">
-      <label htmlFor="username">
-        <input
-          type="text"
-          ref={usernameRef}
-          onKeyPress={handleInputEnter}
-          placeholder="username"
-          id="username"
-        />
-      </label>
-      <div>{usernameErrorMessage}</div>
-      <label htmlFor="email">
-        <input
-          type="email"
-          ref={emailRef}
-          onKeyPress={handleInputEnter}
-          placeholder="email"
-          id="email"
-        />
-      </label>
-      <div>{isValidEmail ? '' : 'Email is not valid'}</div>
-      <label htmlFor="password">
-        <input
-          type="password"
-          ref={passwordRef}
-          onKeyPress={handleInputEnter}
-          placeholder="password"
-          id="password"
-        />
-      </label>
-      <div>{passwordErrorMessage}</div>
-      <label htmlFor="passwordConfirm">
-        <input
-          type="passwordConfirm"
-          ref={passwordConfirmRef}
-          onKeyPress={handleInputEnter}
-          placeholder="passwordConfirm"
-          id="passwordConfirm"
-        />
-      </label>
-      <div>{passwordConfirmErrorMessage}</div>
-      <button type="button" onClick={handleSubmit}>
-        Submit
-      </button>
-    </form>
+    <>
+      <h1>{heading.trvFormRoughValidator}</h1>
+      <form autoComplete="off">
+        <label htmlFor="username">
+          <input
+            type="text"
+            ref={usernameRef}
+            onKeyPress={handleInputEnter}
+            placeholder="username"
+            id="username"
+          />
+        </label>
+        <div>{usernameErrorMessage}</div>
+        <label htmlFor="email">
+          <input
+            type="email"
+            ref={emailRef}
+            onKeyPress={handleInputEnter}
+            placeholder="email"
+            id="email"
+          />
+        </label>
+        <div>{isValidEmail ? '' : 'Email is not valid'}</div>
+        <label htmlFor="password">
+          <input
+            type="password"
+            ref={passwordRef}
+            onKeyPress={handleInputEnter}
+            placeholder="password"
+            id="password"
+          />
+        </label>
+        <div>{passwordErrorMessage}</div>
+        <label htmlFor="passwordConfirm">
+          <input
+            type="passwordConfirm"
+            ref={passwordConfirmRef}
+            onKeyPress={handleInputEnter}
+            placeholder="passwordConfirm"
+            id="passwordConfirm"
+          />
+        </label>
+        <div>{passwordConfirmErrorMessage}</div>
+        <button type="button" onClick={handleSubmit}>
+          Submit
+        </button>
+      </form>
+    </>
   );
 }

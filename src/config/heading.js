@@ -10,6 +10,7 @@ const heading = {
   mathCalc: 'MathCalc (useMemo)',
   trvFormRoughValidator: 'TrvFormRoughValidator',
   trvMovieSeatBooking: 'TrvMovieSeatBooking',
+  trvExchangeRateCalc: 'TrvExchangeRateCalc',
 };
 
 export default heading;

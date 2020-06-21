@@ -12,6 +12,7 @@ import {
   MathCalc,
   TrvFormRoughValidator,
   TrvMovieSeatBooking,
+  TrvExchangeRateCalc,
 } from './components';
 import heading from './config/heading';
 
@@ -66,6 +67,11 @@ const routes = [
     name: 'TrvMovieSeatBooking',
     heading: heading.trvMovieSeatBooking,
   },
+  {
+    link: '/trv-exchange-rate-calc',
+    name: 'TrvExchangeRateCalc',
+    heading: heading.trvExchangeRateCalc,
+  },
 ];
 
 const components = {
@@ -79,6 +85,7 @@ const components = {
   mathCalc: MathCalc,
   trvFormRoughValidator: TrvFormRoughValidator,
   trvMovieSeatBooking: TrvMovieSeatBooking,
+  trvExchangeRateCalc: TrvExchangeRateCalc,
 };
 
 function List({ type }) {

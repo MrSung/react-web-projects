@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MathCalcFib from './MathCalcFib';
 import MathCalcPrime from './MathCalcPrime';
+import heading from '../config/heading';
 
 export default function MathCalc() {
   const [fibCount, setFibCount] = useState(1);
@@ -18,6 +19,7 @@ export default function MathCalc() {
 
   return (
     <>
+      <h1>{heading.mathCalc}</h1>
       <hr />
       <button type="button" onClick={handleAdd10}>
         Add 10

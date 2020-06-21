@@ -8,6 +8,7 @@ import LocaleContextSample from './LocaleContextSample';
 import MathCalc from './MathCalc';
 import TrvFormRoughValidator from './TrvFormRoughValidator';
 import TrvMovieSeatBooking from './TrvMovieSeatBooking';
+import TrvExchangeRateCalc from './TrvExchangeRateCalc';
 
 export {
   Home,
@@ -20,4 +21,5 @@ export {
   MathCalc,
   TrvFormRoughValidator,
   TrvMovieSeatBooking,
+  TrvExchangeRateCalc,
 };

@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import heading from '../config/heading';
 
 export default function CounterReducer() {
   const reducer = (stateReducer, action) => {
@@ -17,6 +18,7 @@ export default function CounterReducer() {
 
   return (
     <>
+      <h1>{heading.counterReducer}</h1>
       <div>
         <button type="button" onClick={() => dispatch({ type: 'increment' })}>
           increment
