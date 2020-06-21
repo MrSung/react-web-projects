@@ -28,6 +28,11 @@ export default function TrvExchangeRateCalc() {
   const baseRateRef = useRef(DEFAULT_BASE_RATE);
   const selectedTargetCurrencyRef = useRef(DEFAULT_TARGET_RATE);
 
+  const handleSwapButtonClick = () => {
+    setSelectedBaseCurrency(selectedTargetCurrency);
+    setSelectedTargetCurrency(selectedBaseCurrency);
+  };
+
   useEffect(() => {
     fetch(`${ENDPOINT_BASE_URL}/${selectedBaseCurrency}`)
       .then((response) => response.json())
@@ -82,7 +87,7 @@ export default function TrvExchangeRateCalc() {
                 <input
                   type="number"
                   min="0"
-                  max="20"
+                  max="1000"
                   name="baseRate"
                   id="baseRate"
                   ref={baseRateRef}
@@ -96,7 +101,9 @@ export default function TrvExchangeRateCalc() {
           </tr>
           <tr>
             <td>
-              <button type="button">Swap</button>
+              <button type="button" onClick={handleSwapButtonClick}>
+                Swap
+              </button>
             </td>
             <td>
               {convertedRate && (
