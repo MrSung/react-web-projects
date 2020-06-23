@@ -113,8 +113,12 @@ export default function App() {
         </nav>
 
         <Switch>
-          {routes.reverse().map((route) => (
-            <Route path={route.link} key={route.name}>
+          {routes.map((route) => (
+            <Route
+              path={route.link}
+              exact={route.link === '/'}
+              key={route.name}
+            >
               <List type={route.name} />
             </Route>
           ))}
