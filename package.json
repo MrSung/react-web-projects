@@ -10,8 +10,8 @@
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html",
     "clean": "rimraf .cache dist",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
     "@exampledev/new.css": "1.1.3",
