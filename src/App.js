@@ -13,6 +13,7 @@ import {
   TrvFormRoughValidator,
   TrvMovieSeatBooking,
   TrvExchangeRateCalc,
+  TrvDomArrayMethods,
 } from './components';
 import heading from './config/heading';
 
@@ -72,6 +73,11 @@ const routes = [
     name: 'TrvExchangeRateCalc',
     heading: heading.trvExchangeRateCalc,
   },
+  {
+    link: '/trv-dom-array-methods',
+    name: 'TrvDomArrayMethods',
+    heading: heading.trvDomArrayMethods,
+  },
 ];
 
 const components = {
@@ -86,6 +92,7 @@ const components = {
   trvFormRoughValidator: TrvFormRoughValidator,
   trvMovieSeatBooking: TrvMovieSeatBooking,
   trvExchangeRateCalc: TrvExchangeRateCalc,
+  trvDomArrayMethods: TrvDomArrayMethods,
 };
 
 function List({ type }) {

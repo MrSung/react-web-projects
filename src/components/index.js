@@ -9,6 +9,7 @@ import MathCalc from './MathCalc';
 import TrvFormRoughValidator from './TrvFormRoughValidator';
 import TrvMovieSeatBooking from './TrvMovieSeatBooking';
 import TrvExchangeRateCalc from './TrvExchangeRateCalc';
+import TrvDomArrayMethods from './TrvDomArrayMethods';
 
 export {
   Home,
@@ -22,4 +23,5 @@ export {
   TrvFormRoughValidator,
   TrvMovieSeatBooking,
   TrvExchangeRateCalc,
+  TrvDomArrayMethods,
 };

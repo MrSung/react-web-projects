@@ -11,6 +11,7 @@ const heading = {
   trvFormRoughValidator: 'TrvFormRoughValidator',
   trvMovieSeatBooking: 'TrvMovieSeatBooking',
   trvExchangeRateCalc: 'TrvExchangeRateCalc',
+  trvDomArrayMethods: 'TrvDomArrayMethods',
 };
 
 export default heading;
