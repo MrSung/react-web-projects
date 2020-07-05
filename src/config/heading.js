@@ -12,6 +12,7 @@ const heading = {
   trvMovieSeatBooking: 'TrvMovieSeatBooking',
   trvExchangeRateCalc: 'TrvExchangeRateCalc',
   trvDomArrayMethods: 'TrvDomArrayMethods',
+  ztmToDo: 'ZtmToDo (Redux)',
 };
 
 export default heading;

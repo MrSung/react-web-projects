@@ -14,6 +14,7 @@ import {
   TrvMovieSeatBooking,
   TrvExchangeRateCalc,
   TrvDomArrayMethods,
+  ZtmToDo,
 } from './components';
 import heading from './config/heading';
 
@@ -78,6 +79,11 @@ const routes = [
     name: 'TrvDomArrayMethods',
     heading: heading.trvDomArrayMethods,
   },
+  {
+    link: '/ztm-to-do',
+    name: 'ZtmToDo',
+    heading: heading.ztmToDo,
+  },
 ];
 
 const components = {
@@ -93,6 +99,7 @@ const components = {
   trvMovieSeatBooking: TrvMovieSeatBooking,
   trvExchangeRateCalc: TrvExchangeRateCalc,
   trvDomArrayMethods: TrvDomArrayMethods,
+  ztmToDo: ZtmToDo,
 };
 
 function List({ type }) {

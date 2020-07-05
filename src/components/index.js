@@ -10,6 +10,7 @@ import TrvFormRoughValidator from './TrvFormRoughValidator';
 import TrvMovieSeatBooking from './TrvMovieSeatBooking';
 import TrvExchangeRateCalc from './TrvExchangeRateCalc';
 import TrvDomArrayMethods from './TrvDomArrayMethods';
+import ZtmToDo from './ZtmToDo';
 
 export {
   Home,
@@ -24,4 +25,5 @@ export {
   TrvMovieSeatBooking,
   TrvExchangeRateCalc,
   TrvDomArrayMethods,
+  ZtmToDo,
 };
