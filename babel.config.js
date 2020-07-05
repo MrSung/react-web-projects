@@ -11,6 +11,7 @@ module.exports = (api) => {
           corejs: 3,
           targets: {
             ie: '11',
+            node: 'current',
           },
         },
       ],
