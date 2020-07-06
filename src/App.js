@@ -15,6 +15,7 @@ import {
   TrvExchangeRateCalc,
   TrvDomArrayMethods,
   ZtmToDo,
+  UidToDo1,
 } from './components';
 import heading from './config/heading';
 
@@ -84,6 +85,11 @@ const routes = [
     name: 'ZtmToDo',
     heading: heading.ztmToDo,
   },
+  {
+    link: '/uid-to-do-1',
+    name: 'UidToDo1',
+    heading: heading.uidToDo1,
+  },
 ];
 
 const components = {
@@ -100,6 +106,7 @@ const components = {
   trvExchangeRateCalc: TrvExchangeRateCalc,
   trvDomArrayMethods: TrvDomArrayMethods,
   ztmToDo: ZtmToDo,
+  uidToDo1: UidToDo1,
 };
 
 function List({ type }) {
