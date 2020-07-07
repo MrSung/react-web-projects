@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions, jsx-a11y/interactive-supports-focus, jsx-a11y/click-events-have-key-events */
-import React, { useRef, useEffect, useReducer } from 'react';
+import React, { useRef, useReducer, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { nanoid } from 'nanoid';
 import heading from '../config/heading';
-
-const generateId = () =>
-  Math.random().toString(36).substring(2) + new Date().getTime().toString(36);
 
 /**
  * Action types
@@ -158,7 +156,7 @@ function Todos({ store: storeTodos, todosTodos = [] }) {
     inputRef.current.value = '';
     storeTodos.dispatch(
       addTodoAction({
-        id: generateId(),
+        id: nanoid(5),
         name,
         complete: false,
       })
@@ -192,7 +190,7 @@ function Goals({ store: storeGoals, goalsGoals = [] }) {
     inputRef.current.value = '';
     storeGoals.dispatch(
       addGoalAction({
-        id: generateId(),
+        id: nanoid(5),
         name,
       })
     );
