@@ -12,6 +12,7 @@ import TrvExchangeRateCalc from './TrvExchangeRateCalc';
 import TrvDomArrayMethods from './TrvDomArrayMethods';
 import ZtmToDo from './ZtmToDo';
 import UidToDo1 from './UidToDo1';
+import UidToDo2 from './UidToDo2';
 
 export {
   Home,
@@ -28,4 +29,5 @@ export {
   TrvDomArrayMethods,
   ZtmToDo,
   UidToDo1,
+  UidToDo2,
 };

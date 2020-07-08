@@ -14,6 +14,7 @@ const heading = {
   trvDomArrayMethods: 'TrvDomArrayMethods',
   ztmToDo: 'ZtmToDo (Redux)',
   uidToDo1: 'UidToDo1 (Redux)',
+  uidToDo2: 'UidToDo2 (Redux)',
 };
 
 export default heading;

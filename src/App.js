@@ -16,6 +16,7 @@ import {
   TrvDomArrayMethods,
   ZtmToDo,
   UidToDo1,
+  UidToDo2,
 } from './components';
 import heading from './config/heading';
 
@@ -90,6 +91,11 @@ const routes = [
     name: 'UidToDo1',
     heading: heading.uidToDo1,
   },
+  {
+    link: '/uid-to-do-2',
+    name: 'UidToDo2',
+    heading: heading.uidToDo2,
+  },
 ];
 
 const components = {
@@ -107,6 +113,7 @@ const components = {
   trvDomArrayMethods: TrvDomArrayMethods,
   ztmToDo: ZtmToDo,
   uidToDo1: UidToDo1,
+  uidToDo2: UidToDo2,
 };
 
 function List({ type }) {
