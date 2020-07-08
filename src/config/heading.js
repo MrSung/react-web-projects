@@ -13,8 +13,7 @@ const heading = {
   trvExchangeRateCalc: 'TrvExchangeRateCalc',
   trvDomArrayMethods: 'TrvDomArrayMethods',
   ztmToDo: 'ZtmToDo (Redux)',
-  uidToDo1: 'UidToDo1 (Redux)',
-  uidToDo2: 'UidToDo2 (Redux)',
+  uidToDo: 'UidToDo (Redux)',
 };
 
 export default heading;

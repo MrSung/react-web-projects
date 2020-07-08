@@ -11,8 +11,7 @@ import TrvMovieSeatBooking from './TrvMovieSeatBooking';
 import TrvExchangeRateCalc from './TrvExchangeRateCalc';
 import TrvDomArrayMethods from './TrvDomArrayMethods';
 import ZtmToDo from './ZtmToDo';
-import UidToDo1 from './UidToDo1';
-import UidToDo2 from './UidToDo2';
+import UidToDo from './UidToDo';
 
 export {
   Home,
@@ -28,6 +27,5 @@ export {
   TrvExchangeRateCalc,
   TrvDomArrayMethods,
   ZtmToDo,
-  UidToDo1,
-  UidToDo2,
+  UidToDo,
 };
